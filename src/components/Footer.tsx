@@ -1,5 +1,6 @@
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
-import imgImageLogo from "figma:asset/45a0c92c67123fe44d63c8950e682cc4a3fb46bb.png";
+import { IMAGES } from '../constants/images';
+import { SimpleImage } from './OptimizedImage';
 
 // X (Twitter) Icon component since it's not in lucide-react
 const XIcon = () => (
@@ -31,7 +32,7 @@ export default function Footer({ onSupplementsClick }: FooterProps) {
           <div className="md:col-span-2">
             <div className="flex items-center gap-4 mb-6">
               <img 
-                src={imgImageLogo} 
+                src={IMAGES.logos.main} 
                 alt="The Fit Business Logo" 
                 className="w-[60px] h-auto"
               />
@@ -45,36 +46,46 @@ export default function Footer({ onSupplementsClick }: FooterProps) {
             
             {/* Social Icons */}
             <div className="flex gap-4">
-              <a 
-                href="#" 
+              <a
+                href="https://www.instagram.com/fit_bznz/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="https://x.com/thefitbznz"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
                 aria-label="X (Twitter)"
               >
                 <XIcon />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="https://www.linkedin.com/company/thefitbrand/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="https://www.facebook.com/profile.php?id=61577855432287"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="https://www.tiktok.com/@thefitbrand"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
                 aria-label="TikTok"
               >

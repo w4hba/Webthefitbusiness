@@ -1,5 +1,5 @@
-import imgImage6 from "figma:asset/2f1a59bec263a5bed0a899a611870bb0cfe8aecc.png";
-import imgScreenshot20251116At22752Pm1 from "figma:asset/09dd02a6f603db995ebebe3a7ad0d906c14f5915.png";
+import imgImage6 from "../assets/2f1a59bec263a5bed0a899a611870bb0cfe8aecc.png?url";
+import imgScreenshot20251116At22752Pm1 from "../assets/09dd02a6f603db995ebebe3a7ad0d906c14f5915.png?url";
 
 function Testimonials() {
   return (

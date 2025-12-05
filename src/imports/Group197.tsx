@@ -1,6 +1,6 @@
 import svgPaths from "./svg-vxc58rs2yv";
-import img9D542457E6Bd4Ca2A7B08Ac98422E11E1 from "figma:asset/d33d6263df1fd2f342437f74cc93085e6fd5c66d.png";
-import imgChatGptImageNov82025093728Pm1 from "figma:asset/dc4274a787fa2df517aff4a4dd585914dc7f1a5d.png";
+import img9D542457E6Bd4Ca2A7B08Ac98422E11E1 from "../assets/d33d6263df1fd2f342437f74cc93085e6fd5c66d.png?url";
+import imgChatGptImageNov82025093728Pm1 from "../assets/dc4274a787fa2df517aff4a4dd585914dc7f1a5d.png?url";
 
 function Icon() {
   return (

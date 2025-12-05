@@ -1,8 +1,8 @@
 import svgPaths from "./svg-c12dz9uv2x";
-import imgImg478121 from "figma:asset/25d26282a760383dd489d822803d5583d039ef62.png";
-import imgImg56391 from "figma:asset/354c565523964222b6ef7dba80799cb01d6dc25d.png";
-import imgImg486221 from "figma:asset/b9c9f099eff086629f84ac01bc1338e3ed8173da.png";
-import imgImg56381 from "figma:asset/8c4035f264fb35542abcbd6a54525b2bdb0b8473.png";
+import imgImg478121 from "../assets/25d26282a760383dd489d822803d5583d039ef62.png?url";
+import imgImg56391 from "../assets/354c565523964222b6ef7dba80799cb01d6dc25d.png?url";
+import imgImg486221 from "../assets/b9c9f099eff086629f84ac01bc1338e3ed8173da.png?url";
+import imgImg56381 from "../assets/8c4035f264fb35542abcbd6a54525b2bdb0b8473.png?url";
 
 function Group() {
   return (

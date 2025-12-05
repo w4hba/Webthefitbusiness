@@ -1,5 +1,5 @@
-import imgImage from "figma:asset/2f1a59bec263a5bed0a899a611870bb0cfe8aecc.png";
-import imgImage1 from "figma:asset/35f2a1787f5f0237e97b82c61f4599eceb08c072.png";
+import imgImage from "../assets/2f1a59bec263a5bed0a899a611870bb0cfe8aecc.png?url";
+import imgImage1 from "../assets/35f2a1787f5f0237e97b82c61f4599eceb08c072.png?url";
 
 function Container() {
   return (

@@ -2,12 +2,7 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import TestimonialCard from './TestimonialCard';
 import { motion } from 'framer-motion';
-import imgCard1 from "figma:asset/35f2a1787f5f0237e97b82c61f4599eceb08c072.png";
-import imgCard2 from "figma:asset/e87f74bf450a1bc48de2908aa0e3fe4306087992.png";
-import imgCard3 from "figma:asset/5f24144cb4e8c18ea66eb4f45cd86a0b6cc1453c.png";
-import imgCard4 from "figma:asset/09dd02a6f603db995ebebe3a7ad0d906c14f5915.png";
-import imgCard5 from "figma:asset/d79774fa4b4857ec8a9b50ae9739c92014f9bdcd.png";
-import imgCard6 from "figma:asset/0b809e3ab0aa9f59a819972e1143b5ebd4a52bb3.png";
+import { IMAGES } from '../constants/images';
 
 const testimonials = [
   {
@@ -16,7 +11,7 @@ const testimonials = [
     occupation: "Senior Computer Engineer",
     testimonial: "Working with Paul completely changed my approach to fitness. The programming was efficient, strategic, and fit perfectly into my demanding schedule. Gained 12 lbs of lean muscle while actually having more energy for work.",
     result: "+7 lbs of Muscle in 5 Months",
-    image: imgCard1
+    image: IMAGES.testimonials.client1
   },
   {
     id: 2,
@@ -24,7 +19,7 @@ const testimonials = [
     occupation: "Executive Financial Planner",
     testimonial: "This program is legit. Coach Paul paid so much attention to even the smallest details, like exact meal timing and workouts around my crazy 60+ hour schedule. Highly recommend.",
     result: "-6bs of Fat in 2 Months",
-    image: imgCard2
+    image: IMAGES.testimonials.client2
   },
   {
     id: 3,
@@ -32,7 +27,7 @@ const testimonials = [
     occupation: "Owner of Brockton's Grille",
     testimonial: "I feel so much better about myself after working with Coach Paul. He made fitness and dieting so simple for me. He gave me my fire back!! \"Bring the thunder!\"",
     result: "-25lbs of Fat in 6 Months",
-    image: imgCard3
+    image: IMAGES.testimonials.client3
   },
   {
     id: 4,
@@ -40,7 +35,7 @@ const testimonials = [
     occupation: "CEO of Sanchez Group Financial",
     testimonial: "My life completely took a 180. I used to struggle with sleep, energy, and having to keep up with my work due to my poor health. Now, I wake up ready to tackle the day with all my energy back,",
     result: "+10 lbs of Muscle in 8 Months",
-    image: imgCard4
+    image: IMAGES.testimonials.client4
   },
   {
     id: 5,
@@ -48,7 +43,7 @@ const testimonials = [
     occupation: "VP of Sales, Arista Biotech",
     testimonial: "I grew leaps and bounds because of this program. Even when I fell off (more times than I should've), Coach Paul was always there for support and gave 100% into helping me.",
     result: "-50bs of Fat in 13 Months",
-    image: imgCard5
+    image: IMAGES.testimonials.client5
   },
   {
     id: 6,
@@ -56,7 +51,7 @@ const testimonials = [
     occupation: "Marketing Director",
     testimonial: "The transformation has been incredible. Paul's program gave me the confidence and strength I never knew I had. The personalized approach made all the difference in achieving real, lasting results.",
     result: "-15 lbs in 6 Months",
-    image: imgCard6
+    image: IMAGES.testimonials.client6
   }
 ];
 

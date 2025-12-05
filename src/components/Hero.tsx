@@ -1,8 +1,7 @@
-import imgImage from "figma:asset/fc33736fbedeb947dec4669a38dbb1f43aa77ac8.png";
-import imgImageLogo from "figma:asset/45a0c92c67123fe44d63c8950e682cc4a3fb46bb.png";
-import imgImage1 from "figma:asset/194697a0554e25ec9c2cf91d4b8de4e9c1600416.png";
 import { useState } from 'react';
 import { X } from 'lucide-react';
+import { IMAGES } from '../constants/images';
+import { SimpleImage } from './OptimizedImage';
 
 interface HeroProps {
   onSupplementsClick: () => void;
@@ -37,7 +36,7 @@ export default function Hero({ onSupplementsClick }: HeroProps) {
       {/* Navigation */}
       <div className="absolute bg-black h-[105px] left-0 top-0 w-full z-10">
         <div className="absolute h-[62px] left-[29px] top-[26px] w-[93px]">
-          <img alt="The Fit Business Logo" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgImageLogo} />
+          <SimpleImage alt="The Fit Business Logo" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={IMAGES.logos.main} />
         </div>
         
         <div className="absolute h-[111px] left-[123px] top-[26px] w-[266px]">
@@ -79,7 +78,7 @@ export default function Hero({ onSupplementsClick }: HeroProps) {
 
       {/* Left Image with Text Overlay */}
       <div className="absolute h-[789px] left-[0.2px] overflow-clip top-[105px] w-[590px]">
-        <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full transition-transform duration-700 hover:scale-105" src={imgImage} />
+        <SimpleImage alt="Fitness athlete training" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full transition-transform duration-700 hover:scale-105" src={IMAGES.hero.left} />
         <p className="absolute font-['DM_Serif_Text:Regular',sans-serif] leading-[72px] left-[27.8px] not-italic text-[70px] text-nowrap text-white top-[15px] tracking-[-1.677px] whitespace-pre">
           COME OUT WITH
           <br aria-hidden="true" />
@@ -92,7 +91,7 @@ export default function Hero({ onSupplementsClick }: HeroProps) {
       {/* Right Image Container */}
       <div className="absolute box-border content-stretch flex flex-col h-[789px] items-start right-0 overflow-clip pb-0 top-[105px] w-[620px]">
         <div className="h-[937.328px] relative shrink-0 w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full transition-transform duration-700 hover:scale-105" src={imgImage1} />
+          <SimpleImage alt="Professional athlete showcasing results" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full transition-transform duration-700 hover:scale-105" src={IMAGES.hero.right} />
         </div>
       </div>
 

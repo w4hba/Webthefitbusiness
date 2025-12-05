@@ -2,13 +2,7 @@ import { useState } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import BlogPost from './BlogPost';
-import imgHero from "figma:asset/b1b32578096800c5cc20a56451880a43842ac55a.png";
-import imgFeatured from "figma:asset/ec6304b625d7101dbb1b056edf21f6ce38a08ad4.png";
-import imgBlog1 from "figma:asset/b92d0bf66f0e3e4e7459af122856cfdd8900b21f.png";
-import imgBlog2 from "figma:asset/c120b6b6ac341b15a33219e3436d7752fc1516bf.png";
-import imgBlog3 from "figma:asset/4a0b2e6f4fb3c92b5aae48b8817bf1aa360f99ce.png";
-import imgBlog4 from "figma:asset/e6505544831a5bc0702b6a24e805b249f0443326.png";
-import imgBlog5 from "figma:asset/42fdb61644f7d992db9151981da834f85fdf1127.png";
+import { IMAGES } from '../constants/images';
 
 const categories = ['All', 'Training', 'Nutrition', 'Home Building', 'Fat Loss', 'Recovery', 'Supplements', 'Mentality'];
 
@@ -16,7 +10,7 @@ const featuredPost = {
   id: 1,
   title: "5 Training Mistakes Keeping You From Your Goals",
   excerpt: "Most people think more is better when it comes to training. Discover the counterintuitive truth about why less might be exactly what you need.",
-  image: imgFeatured,
+  image: IMAGES.blog.featured,
   category: "Training",
   readTime: "8 min read",
   date: "Dec 8, 2025"
@@ -27,7 +21,7 @@ const posts = [
     id: 2,
     title: "The Busy Professional's Guide to Meal Prep",
     excerpt: "Master the art of efficient meal preparation with strategies designed for your hectic schedule.",
-    image: imgBlog1,
+    image: IMAGES.blog.post1,
     category: "Nutrition",
     readTime: "6 min read",
     date: "Dec 5, 2025"
@@ -36,7 +30,7 @@ const posts = [
     id: 3,
     title: "Building Muscle After 40: What Actually Works",
     excerpt: "Science-backed protocols for building and maintaining muscle as you age, without spending hours in the gym.",
-    image: imgBlog2,
+    image: IMAGES.blog.post2,
     category: "Home Building",
     readTime: "9 min read",
     date: "Dec 2, 2025"
@@ -45,7 +39,7 @@ const posts = [
     id: 4,
     title: "The Truth About Supplements: What You Actually Need",
     excerpt: "Cutting through the marketing to identify which supplements actually deliver results worth your investment.",
-    image: imgBlog3,
+    image: IMAGES.blog.post3,
     category: "Supplements",
     readTime: "7 min read",
     date: "Nov 29, 2025"
@@ -54,7 +48,7 @@ const posts = [
     id: 5,
     title: "Recovery Strategies for High-Performers",
     excerpt: "Optimize your recovery to train harder, think sharper, and perform better in every area of life.",
-    image: imgBlog4,
+    image: IMAGES.blog.post4,
     category: "Recovery",
     readTime: "5 min read",
     date: "Nov 26, 2025"
@@ -63,7 +57,7 @@ const posts = [
     id: 6,
     title: "Fat Loss Without Counting Calories",
     excerpt: "Sustainable fat loss strategies that fit seamlessly into your lifestyle without obsessive tracking.",
-    image: imgBlog5,
+    image: IMAGES.blog.post5,
     category: "Fat Loss",
     readTime: "6 min read",
     date: "Nov 23, 2025"
@@ -86,7 +80,15 @@ interface BlogProps {
 export default function Blog({ onSupplementsClick }: BlogProps) {
   const [activeCategory, setActiveCategory] = useState('All');
   const [currentPage, setCurrentPage] = useState(0);
-  const [selectedPost, setSelectedPost] = useState<typeof featuredPost | null>(null);
+  const [selectedPost, setSelectedPost] = useState<{
+    id: number;
+    title: string;
+    excerpt: string;
+    image: string;
+    category: string;
+    readTime: string;
+    date: string;
+  } | null>(null);
   const POSTS_PER_PAGE = 6;
 
   // Calculate total pages
@@ -118,7 +120,7 @@ export default function Blog({ onSupplementsClick }: BlogProps) {
           {/* Hero Section */}
           <div className="relative mb-16 rounded-lg overflow-hidden h-[400px]">
             <img 
-              src={imgHero}
+              src={IMAGES.blog.hero}
               alt="The Fit Blog"
               className="absolute inset-0 w-full h-full object-cover"
             />

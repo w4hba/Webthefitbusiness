@@ -1,4 +1,4 @@
-import imgImage from "figma:asset/a5891274690dbec5a0e060ec28a2e0f624599a23.png";
+import imgImage from "../assets/a5891274690dbec5a0e060ec28a2e0f624599a23.png?url";
 
 function Image() {
   return (

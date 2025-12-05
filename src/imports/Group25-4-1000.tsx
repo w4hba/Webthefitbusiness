@@ -1,5 +1,5 @@
 import svgPaths from "./svg-u1omospmoe";
-import imgF99Ec7Be1Ff9473989B14Dc5Da09D4Eb2 from "figma:asset/c6aff2bc80678ba2a8cc3ac28ea814ab1e19c246.png";
+import imgF99Ec7Be1Ff9473989B14Dc5Da09D4Eb2 from "../assets/c6aff2bc80678ba2a8cc3ac28ea814ab1e19c246.png?url";
 
 function Heading() {
   return <div className="absolute h-[24px] left-0 top-0 w-[896px]" data-name="Heading 1" />;

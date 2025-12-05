@@ -1,6 +1,6 @@
 import svgPaths from "./svg-80zv10glfq";
-import imgImageProgressiveOverloadTheFoundationOfStrengthTraining from "figma:asset/7e2b1d6c74811e8d1a03f4329eb8384bee3efe6a.png";
-import imgImageMetabolicConditioningForStrengthAthletes from "figma:asset/cde2da65f2c40c1dabec26d2ee363f1b5c6040e4.png";
+import imgImageProgressiveOverloadTheFoundationOfStrengthTraining from "../assets/7e2b1d6c74811e8d1a03f4329eb8384bee3efe6a.png?url";
+import imgImageMetabolicConditioningForStrengthAthletes from "../assets/cde2da65f2c40c1dabec26d2ee363f1b5c6040e4.png?url";
 
 function Text() {
   return (

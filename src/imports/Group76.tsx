@@ -1,5 +1,5 @@
-import imgImage6 from "figma:asset/2f1a59bec263a5bed0a899a611870bb0cfe8aecc.png";
-import imgScreenshot20251116At22902Pm1 from "figma:asset/0b809e3ab0aa9f59a819972e1143b5ebd4a52bb3.png";
+import imgImage6 from "../assets/2f1a59bec263a5bed0a899a611870bb0cfe8aecc.png?url";
+import imgScreenshot20251116At22902Pm1 from "../assets/0b809e3ab0aa9f59a819972e1143b5ebd4a52bb3.png?url";
 
 export default function Group() {
   return (

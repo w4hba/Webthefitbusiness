@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
 import svgPaths from "../imports/svg-vxc58rs2yv";
-import imgLogo from "figma:asset/d33d6263df1fd2f342437f74cc93085e6fd5c66d.png";
-import imgNavLogo from "figma:asset/dc4274a787fa2df517aff4a4dd585914dc7f1a5d.png";
-import imgImageLogo from "figma:asset/45a0c92c67123fe44d63c8950e682cc4a3fb46bb.png";
+import { IMAGES } from '../constants/images';
+import { SimpleImage } from './OptimizedImage';
 
 // X (Twitter) Icon component
 const TwitterIcon = () => (
@@ -60,7 +59,7 @@ export default function SupplementsPage({ onClose }: SupplementsPageProps) {
         <div className="bg-black h-[105px] w-full border-b border-white/10">
           <div className="max-w-[1200px] mx-auto px-8 relative h-full">
             <button onClick={handleLogoClick} className="absolute h-[62px] left-8 top-[26px] w-[93px] cursor-pointer bg-transparent border-none p-0">
-              <img alt="The Fit Business Logo" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgImageLogo} />
+              <img alt="The Fit Business Logo" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={IMAGES.logos.main} />
             </button>
             
             <button onClick={handleLogoClick} className="absolute h-[111px] left-[123px] top-[26px] w-[266px] cursor-pointer bg-transparent border-none p-0 text-left">
@@ -107,7 +106,7 @@ export default function SupplementsPage({ onClose }: SupplementsPageProps) {
             {/* Large Logo */}
             <div className="flex justify-center mb-12">
               <img 
-                src={imgLogo}
+                src={IMAGES.supplements.logo}
                 alt="The Fit Business Logo"
                 className="w-[460px] h-[460px] object-contain"
               />
@@ -187,7 +186,7 @@ export default function SupplementsPage({ onClose }: SupplementsPageProps) {
               <div className="md:col-span-2">
                 <div className="flex items-center gap-4 mb-6">
                   <img 
-                    src={imgImageLogo} 
+                    src={IMAGES.logos.main} 
                     alt="The Fit Business Logo" 
                     className="w-[60px] h-auto"
                   />

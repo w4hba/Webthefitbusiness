@@ -1,11 +1,11 @@
 import svgPaths from "./svg-bfda65uc3g";
-import imgImageWithFallback from "figma:asset/ec6304b625d7101dbb1b056edf21f6ce38a08ad4.png";
-import imgImageWithFallback1 from "figma:asset/b92d0bf66f0e3e4e7459af122856cfdd8900b21f.png";
-import imgImageWithFallback2 from "figma:asset/c120b6b6ac341b15a33219e3436d7752fc1516bf.png";
-import imgImageWithFallback3 from "figma:asset/4a0b2e6f4fb3c92b5aae48b8817bf1aa360f99ce.png";
-import imgImageWithFallback4 from "figma:asset/e6505544831a5bc0702b6a24e805b249f0443326.png";
-import imgImageWithFallback5 from "figma:asset/42fdb61644f7d992db9151981da834f85fdf1127.png";
-import img497D2Da821Cbb599F62163B952E9514D1 from "figma:asset/3f1a1fb1b0a9bdb2d29efc6522971a7b71b536a3.png";
+import imgImageWithFallback from "../assets/ec6304b625d7101dbb1b056edf21f6ce38a08ad4.png?url";
+import imgImageWithFallback1 from "../assets/b92d0bf66f0e3e4e7459af122856cfdd8900b21f.png?url";
+import imgImageWithFallback2 from "../assets/c120b6b6ac341b15a33219e3436d7752fc1516bf.png?url";
+import imgImageWithFallback3 from "../assets/4a0b2e6f4fb3c92b5aae48b8817bf1aa360f99ce.png?url";
+import imgImageWithFallback4 from "../assets/e6505544831a5bc0702b6a24e805b249f0443326.png?url";
+import imgImageWithFallback5 from "../assets/42fdb61644f7d992db9151981da834f85fdf1127.png?url";
+import img497D2Da821Cbb599F62163B952E9514D1 from "../assets/3f1a1fb1b0a9bdb2d29efc6522971a7b71b536a3.png?url";
 
 function Paragraph() {
   return (

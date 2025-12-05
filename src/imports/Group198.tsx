@@ -1,4 +1,4 @@
-import imgChatGptImageNov82025093728Pm1 from "figma:asset/dc4274a787fa2df517aff4a4dd585914dc7f1a5d.png";
+import imgChatGptImageNov82025093728Pm1 from "../assets/dc4274a787fa2df517aff4a4dd585914dc7f1a5d.png?url";
 
 export default function Group() {
   return (

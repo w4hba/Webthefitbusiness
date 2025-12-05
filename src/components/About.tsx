@@ -1,9 +1,7 @@
 import { motion } from "motion/react";
 import svgPaths from "../imports/svg-c12dz9uv2x";
-import imgImg478121 from "figma:asset/25d26282a760383dd489d822803d5583d039ef62.png";
-import imgImg56391 from "figma:asset/354c565523964222b6ef7dba80799cb01d6dc25d.png";
-import imgImg486221 from "figma:asset/b9c9f099eff086629f84ac01bc1338e3ed8173da.png";
-import imgImg56381 from "figma:asset/8c4035f264fb35542abcbd6a54525b2bdb0b8473.png";
+import { IMAGES } from '../constants/images';
+import { OptimizedImage } from './OptimizedImage';
 
 function ImageGrid() {
   return (
@@ -12,24 +10,24 @@ function ImageGrid() {
         <div className="flex-none rotate-[180deg] scale-y-[-100%]">
           <div className="h-[365.784px] relative w-[300.654px]">
             <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-lg">
-              <img alt="" className="absolute h-[178.22%] left-0 max-w-none top-[-44.76%] w-full object-cover" src={imgImg478121} />
+              <OptimizedImage alt="" className="absolute h-[178.22%] left-0 max-w-none top-[-44.76%] w-full object-cover" src={IMAGES.services.strengthTraining} />
             </div>
           </div>
         </div>
       </div>
       <div className="absolute h-[365.784px] left-[53%] top-[5%] w-[279.45px]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-lg">
-          <img alt="" className="absolute h-[100.42%] left-0 max-w-none top-[-0.42%] w-full object-cover" src={imgImg56391} />
+          <OptimizedImage alt="" className="absolute h-[100.42%] left-0 max-w-none top-[-0.42%] w-full object-cover" src={IMAGES.services.nutrition} />
         </div>
       </div>
       <div className="absolute h-[365.784px] left-[8%] top-[5%] w-[272.634px]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-lg">
-          <img alt="" className="absolute h-[161.75%] left-0 max-w-none top-[-35.55%] w-full object-cover" src={imgImg486221} />
+          <OptimizedImage alt="" className="absolute h-[161.75%] left-0 max-w-none top-[-35.55%] w-full object-cover" src={IMAGES.services.mobility} />
         </div>
       </div>
       <div className="absolute h-[365.784px] left-[8%] top-[50%] w-[271.876px]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-lg">
-          <img alt="" className="absolute h-[130.91%] left-0 max-w-none top-[-30.85%] w-[122.13%] object-cover" src={imgImg56381} />
+          <OptimizedImage alt="" className="absolute h-[130.91%] left-0 max-w-none top-[-30.85%] w-[122.13%] object-cover" src={IMAGES.services.recovery} />
         </div>
       </div>
     </div>

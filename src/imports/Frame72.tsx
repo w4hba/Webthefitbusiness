@@ -1,6 +1,6 @@
-import imgImage from "figma:asset/fc33736fbedeb947dec4669a38dbb1f43aa77ac8.png";
-import imgImageLogo from "figma:asset/45a0c92c67123fe44d63c8950e682cc4a3fb46bb.png";
-import imgImage1 from "figma:asset/194697a0554e25ec9c2cf91d4b8de4e9c1600416.png";
+import imgImage from "../assets/fc33736fbedeb947dec4669a38dbb1f43aa77ac8.png?url";
+import imgImageLogo from "../assets/45a0c92c67123fe44d63c8950e682cc4a3fb46bb.png?url";
+import imgImage1 from "../assets/194697a0554e25ec9c2cf91d4b8de4e9c1600416.png?url";
 
 function Image() {
   return (

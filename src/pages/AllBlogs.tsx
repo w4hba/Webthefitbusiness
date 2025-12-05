@@ -1,6 +1,6 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
-import imgImageLogo from "figma:asset/45a0c92c67123fe44d63c8950e682cc4a3fb46bb.png";
+import imgImageLogo from "../assets/45a0c92c67123fe44d63c8950e682cc4a3fb46bb.png?url";
 
 const allPosts = [
   {

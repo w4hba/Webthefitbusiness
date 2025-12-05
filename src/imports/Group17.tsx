@@ -1,4 +1,4 @@
-import imgImage3 from "figma:asset/b1b32578096800c5cc20a56451880a43842ac55a.png";
+import imgImage3 from "../assets/b1b32578096800c5cc20a56451880a43842ac55a.png?url";
 
 function Group() {
   return (

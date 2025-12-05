@@ -2,9 +2,9 @@ import { X, Share2, Clock } from 'lucide-react';
 import Hero from './Hero';
 import Footer from './Footer';
 import { useState } from 'react';
-import imgImageLogo from "figma:asset/45a0c92c67123fe44d63c8950e682cc4a3fb46bb.png";
-import imgImage from "figma:asset/fc33736fbedeb947dec4669a38dbb1f43aa77ac8.png";
-import imgImage1 from "figma:asset/194697a0554e25ec9c2cf91d4b8de4e9c1600416.png";
+import imgImageLogo from "../assets/45a0c92c67123fe44d63c8950e682cc4a3fb46bb.png?url";
+import imgImage from "../assets/fc33736fbedeb947dec4669a38dbb1f43aa77ac8.png?url";
+import imgImage1 from "../assets/194697a0554e25ec9c2cf91d4b8de4e9c1600416.png?url";
 
 interface BlogPostProps {
   post: {

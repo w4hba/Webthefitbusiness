@@ -1,4 +1,4 @@
-import imgLogo from "figma:asset/2f1a59bec263a5bed0a899a611870bb0cfe8aecc.png";
+import imgLogo from "../assets/2f1a59bec263a5bed0a899a611870bb0cfe8aecc.png?url";
 
 interface TestimonialCardProps {
   name: string;
